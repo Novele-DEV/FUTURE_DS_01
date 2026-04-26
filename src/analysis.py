@@ -17,7 +17,7 @@ def compute_KPIs(df):
     return total_revenue, total_order,total_customers,avg_order_value
 
 def sales_by_region(df):
-    sales_by_region = df.groupby("Country",as_index = False)['Sales'].sum().sort_values(by ="Country",ascending=True)
+    sales_by_region = df.groupby("Country",as_index = False)['Sales'].sum().sort_values(by ="Sales",ascending=False)
     sales_by_region["Country"]= sales_by_region["Country"].astype(str)
     sales_by_region["Sales"]=sales_by_region["Sales"].astype(float)
     return sales_by_region
@@ -34,7 +34,9 @@ def top_10_products(df):
     return top_10
 
 def monthly_trend(df):
-    return df.groupby(['Year', 'Month'])['Sales'].sum().reset_index()
+    monthly_trend = df.groupby(['Year', 'Month'])['Sales'].sum().reset_index()
+    monthly_trend = monthly_trend.sort_values(by = "Sales",ascending = False)
+    return monthly_trend
 
 
 if __name__ == "__main__":
@@ -43,9 +45,10 @@ if __name__ == "__main__":
     revenue, orders,total_customers, avg = compute_KPIs(df)
     listRegionSales:dict = sales_by_region(df)
     listProducts:dict = top_10_products(df)
+    monthlySales:dict = monthly_trend(df)
 
     print(f"Total Revenue: ${revenue:,.2f}")
-    print(f"Average Monthly Revenue: ${revenue/24:,.2f}")
+    print(f"Average Monthly Revenue: ${revenue/13:,.2f}")
     print(f"Total Orders: {orders:,}")
     print(f"Total Customers: {total_customers:,}")
     print(f"Avg Order Value: ${avg:.2f}")
@@ -56,6 +59,11 @@ if __name__ == "__main__":
         i+=1
     print("Countries | Sales")
     for index,country in listRegionSales.iterrows():
-          print(f" {country['Country']} | ${country['Sales']:,.2f}")
+        print(f"{country['Country']} | ${country['Sales']:,.2f}")
 
-    print(monthly_trend(df))
+    print("Monthly Sales Trend in Descending order")
+    for index,month in monthlySales.iterrows():
+        if(len(month['Month'])<6):
+            print(f"{month['Year']} \t {month['Month']} \t\t ${month['Sales']:,.2f}")
+        else:
+            print(f"{month['Year']} \t {month['Month']} \t ${month['Sales']:,.2f}")
