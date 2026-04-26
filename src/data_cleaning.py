@@ -4,14 +4,12 @@
 
 #universal file paths for cleanliness
 import os
-
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
 file_path = os.path.join(BASE_DIR, "data", "raw", "raw_data.csv")
 output_path = os.path.join(BASE_DIR, "data", "processed", "cleaned_data.csv")
-
 #actual processing
 import pandas as pd
+
 
 #function to laod data
 def load_data(path):
@@ -31,8 +29,8 @@ def clean_data(dataFrame):
     dataFrame["InvoiceDate"]=dataFrame["InvoiceDate"].dt.date
     #split over year and month
     dataFrame["Year"]=pd.to_datetime(dataFrame["InvoiceDate"]).dt.year
-    dataFrame["Month"]=pd.to_datetime(dataFrame["InvoiceDate"]).dt.month
-
+    dataFrame["Month"]=pd.to_datetime(dataFrame["InvoiceDate"]).dt.month_name()
+    dataFrame["Sales"]=round(pd.to_numeric(dataFrame["UnitPrice"]*dataFrame["Quantity"]),2)
     return dataFrame
 
 
