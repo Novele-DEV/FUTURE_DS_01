@@ -1,0 +1,38 @@
+From the data provided the following information has been gathered:
+Top 10 Products and their respective generated income:
+    1: REGENCY CAKESTAND 3 TIER | $132,870.40
+    2: WHITE HANGING HEART T-LIGHT HOLDER | $93,823.85
+    3: JUMBO BAG RED RETROSPOT | $83,236.76
+    4: PARTY BUNTING | $67,687.53
+    5: POSTAGE | $66,710.24
+    6: ASSORTED COLOUR BIRD ORNAMENT | $56,499.22
+    7: RABBIT NIGHT LIGHT | $51,137.80
+    8: CHILLI LIGHTS | $45,936.81
+    9: PAPER CHAIN KIT 50'S CHRISTMAS  | $41,500.48
+    10: PICNIC BASKET WICKER 60 PIECES | $39,619.50
+
+Top 10 performing regions:
+    1: UK - $6,767,873.39
+    2: Netherlands - $284,661.54
+    3: EIRE - $250,285.22
+    4: Germany - $221,698.21
+    5: France - $196,712.84
+    6: Australia - $137,077.27
+    7: Switzerland - $55,739.40
+    8: Spain - $54,774.58
+    9: Belgium - $40,910.96
+    10:Sweden - $36,595.91
+ 
+Average Monthly Revenue: $345,836.08
+Total Revenue: $8,300,065.81
+Total Orders: 22,190
+Average Order Value: $374.05
+Customer retention : 22,190/4,372 ~ 5
+
+Overview Report:
+The business has performed very well over the period December 2010 to September 2011. During thus period the business has generated a total revenue of $8,300,065.81, with 22,190 order, each order roughly valued around $374,05. These figures along with the top 10 performing countries and products, it is clear that the business is doing well. The top performing month during the given period was November 2011, followed by October, and September of the same year. However it is to be noted that sales significantly decreased from November to December. Seeing as there were mass public sector strikes on the 30th of November along with 62 English schools closing down, the drop is not unprecedented. However the drop still symbolises a 38,24% decrease year over year for the month of December.
+
+The business is over-dependent on one market, the UK, which generates 81% of total revenue, the business should, diversify their market, prioritising sales in countries 2 to 6 in order to cement their income security, these countries already have proven demand and there is low friction in scaling to these coutnries. This expansion can involve localised ads, country-specific promotions, and better delivery options.
+The top products should be used in bundles to funnel revenue to other products. This can be done by running ads on the top 5 products only, and once a customer clicks the ads the relevant bundle and recommended products should be shown. This will thus increase the average order value, which is actually already quite high.
+The business should aim to improve customer retention, which currently sits at 5 orders per customer, but can be increased using email marketing, loyalty discounts, and seasonal reminders.
+The business seems to have a  decorative niche thus it should prioritise advertising and keeping stock of: aesthetic items, bundle-themed collections of decorative and giftable products that align with the niche.
